@@ -44,7 +44,7 @@ jobs:
       ${{ !github.event.repository.is_template
           && needs.get_current_step.outputs.current_step == 1
           && github.ref_type == 'branch'
-          && github.ref_name == 'my-first-branch' }}
+          && github.ref_name == 'profile' }}
 
     # We'll run Ubuntu for performance instead of Mac or Windows.
     runs-on: ubuntu-latest
